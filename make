@@ -521,7 +521,7 @@ server {
 }
 
 server {
-    listen 4443 ssl;
+    listen 443 ssl;
     server_name djangossl;
 
     location = /favicon.ico { access_log off; log_not_found off; }
