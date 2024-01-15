@@ -1,4 +1,4 @@
-# Redo Rescue With erscipcard(https://IP:4443)
+# Redo Rescue With erscipcard(https://IP)
 
 <p align="center">
   <a href="http://redorescue.com/"><img width="100%" src="http://redorescue.com/images/header.png"></a>
