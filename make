@@ -167,7 +167,7 @@ apt install --no-install-recommends --yes \
 	gsettings-desktop-schemas lxrandr lxmenu-data lxterminal lxappearance \
 	network-manager-gnome gtk2-engines numix-gtk-theme gtk-theme-switch \
 	fonts-lato pcmanfm libfm-modules gpicview mousepad x11vnc pwgen \
-	xvkbd debootstrap squashfs-tools arc  \
+	xvkbd debootstrap squashfs-tools snapd fbxkb \
 	\
 	beep laptop-detect os-prober discover lshw-gtk hdparm smartmontools \
 	nmap time lvm2 gparted gnome-disk-utility baobab gddrescue testdisk \
@@ -184,6 +184,8 @@ perl -p -i -e 's/^D/Redo Rescue $VER\nBased on D/' /etc/issue
 perl -p -i -e 's/^set compatible$/set nocompatible/g' /etc/vim/vimrc.tiny
 apt-get install -y --no-install-recommends libreoffice-writer libreoffice-gtk3
 
+snap install core
+snap install ark
 cd /root
 python3 -m venv pve
 source pve/bin/activate
