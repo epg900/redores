@@ -93,7 +93,8 @@ To build an ISO image from within Debian Linux:
   1. `git clone https://github.com/epg900/redores.git`
   2. `cd redores`
   3. `unzip overlay.zip`
-  4. `sudo ./make`
+  4. `sudo chmod +x ./make`
+  5. `sudo ./make`
 
 After building, it's easy to modify a file or install a package without rebuilding and downloading all the packages again:
 
