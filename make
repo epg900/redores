@@ -167,7 +167,7 @@ apt install --no-install-recommends --yes \
 	gsettings-desktop-schemas lxrandr lxmenu-data lxterminal lxappearance \
 	network-manager-gnome gtk2-engines numix-gtk-theme gtk-theme-switch \
 	fonts-lato pcmanfm libfm-modules gpicview mousepad x11vnc pwgen \
-	xvkbd debootstrap squashfs-tools snapd fbxkb \
+	xvkbd debootstrap squashfs-tools snapd fbxkb scrot \
 	\
 	beep laptop-detect os-prober discover lshw-gtk hdparm smartmontools \
 	nmap time lvm2 gparted gnome-disk-utility baobab gddrescue testdisk \
