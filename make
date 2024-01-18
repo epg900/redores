@@ -167,7 +167,7 @@ apt install --no-install-recommends --yes \
 	gsettings-desktop-schemas lxrandr lxmenu-data lxterminal lxappearance \
 	network-manager-gnome gtk2-engines numix-gtk-theme gtk-theme-switch \
 	fonts-lato pcmanfm libfm-modules gpicview mousepad x11vnc pwgen \
-	xvkbd debootstrap squashfs-tools snapd fbxkb scrot \
+	xvkbd debootstrap squashfs-tools zip unzip \
 	\
 	beep laptop-detect os-prober discover lshw-gtk hdparm smartmontools \
 	nmap time lvm2 gparted gnome-disk-utility baobab gddrescue testdisk \
@@ -175,7 +175,7 @@ apt install --no-install-recommends --yes \
 	smbclient cifs-utils nfs-common sshfs partclone pigz yad f2fs-tools  grub2 \
 	exfat-fuse btrfs-progs putty xrdp adb fastboot python3-venv python3-pip p7zip-full \
 	\
-	nginx syslinux syslinux-common debian-installer php-fpm php-cli chromium $PKGS
+	nginx syslinux syslinux-common debian-installer php-fpm php-cli chromium $PKGS scrot
 
 # Modify /etc/issue banner
 perl -p -i -e 's/^D/Redo Rescue $VER\nBased on D/' /etc/issue
@@ -184,8 +184,6 @@ perl -p -i -e 's/^D/Redo Rescue $VER\nBased on D/' /etc/issue
 perl -p -i -e 's/^set compatible$/set nocompatible/g' /etc/vim/vimrc.tiny
 apt-get install -y --no-install-recommends libreoffice-writer libreoffice-gtk3
 
-snap install core
-snap install ark
 cd /root
 python3 -m venv pve
 source pve/bin/activate
